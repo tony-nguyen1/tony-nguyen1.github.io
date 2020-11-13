@@ -1,13 +1,18 @@
 body, html {
  height: 100%;
+ margin: 0;
 }
 
-#imgPresentation {
+#test {
+  height: 100%;
+}
+
+#imgPresentation { /*https://www.w3schools.com/howto/howto_css_full_page.asp*/
  /* The image used */
  background-image: url("../images/devanture.jpg");
 
  /* Full height */
- height: 100%;
+ height: 85%;
 
  /* Center and scale the image nicely */
  background-position: center;
