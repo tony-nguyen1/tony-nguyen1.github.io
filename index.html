@@ -8,10 +8,14 @@
   <meta name="description" content="Menu et photo du restaurant Printemps d'Asie">
   <meta name="author" content="Tony Nguyen">
 
-  <!--css-->
-  <link rel="stylesheet" href="css/styles.css">
+
   <!--Framework Materialize css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--icone de Materialize css-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--css après les stylesheet précédent pour qu'ils marchent à la fin-->
+  <link rel="stylesheet" href="css/styles.css">
+
 
   <!--Pour créer carte-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -24,7 +28,62 @@
 
 <body>
   <div id="imgPresentation"></div>
-  <div id="cartesPresentationFood">A venir</div>
+
+  <div id="cartesPresentationFood" class="row">
+  <div class="col m4">
+    <div class="card small">
+      <div class="card-image">
+        <img src="images/salade.jpg">
+        <span class="card-title">Salade</span>
+      </div>
+    </div>
+  </div>
+    <div class="col m4">
+      <div class="card small">
+        <div class="card-image">
+          <img src="images/nem.jpeg">
+          <span class="card-title">Nem</span>
+        </div>
+      </div>
+    </div>
+    <div class="col m4">
+      <div class="card small">
+        <div class="card-image">
+          <img src="images/port_au_caramel.jpg">
+          <span class="card-title">Port au caramel</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!--2e rangée d'image-->
+    <!--comportement des row de materialize : elle se place sous la dernière-->
+    <div class="col m4">
+      <div class="card small">
+        <div class="card-image">
+          <img src="images/nem.jpeg">
+          <span class="card-title">Nem</span>
+        </div>
+      </div>
+    </div>
+    <div class="col m4">
+      <div class="card small">
+        <div class="card-image">
+          <img src="images/port_au_caramel.jpg">
+          <span class="card-title">Port au caramel</span>
+        </div>
+      </div>
+    </div>
+    <div class="col m4">
+      <div class="card small">
+        <div class="card-image">
+          <img src="images/salade.jpg">
+          <span class="card-title">Salade</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id ="menuCarte" class="row">
     <h1>La Carte</h1>
     <div class="col s12 m6">
@@ -52,7 +111,6 @@
       </div>
     </div>
   </div>
-
 
 
 
@@ -116,12 +174,12 @@
     </div>
     <div class="card-tabs">
       <ul class="tabs tabs-fixed-width">
-        <li class="tab"><a href="#test4">Téléphone</a></li>
-        <li class="tab"><a class="active" href="#test5">E-mail</a></li>
+        <li class="tab"><a class="active" href="#test4">Téléphone</a></li>
+        <li class="tab"><a href="#test5">E-mail</a></li>
       </ul>
     </div>
     <div class="card-content grey lighten-4">
-      <div id="test4">04 68 25 73 12 </div>
+      <div id="test4"><i class="material-icons">local_phone</i>04 68 25 73 12</div>
       <div id="test5">david.nguyen706@orange.fr</div>
     </div>
   </div>

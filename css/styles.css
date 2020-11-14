@@ -20,3 +20,12 @@ body, html {
 #mapid {
   height : 500px;
 }
+
+/*Pour les images de nouritture*/
+#cartesPresentationFood .card.small
+{/*TODO remplacer les images holder*/
+  height: 213px; /*taille verticale hard codé de façon temporaire le temps de remplacer les images holder*/
+}
+#cartesPresentationFood .card.small .card-image {
+  max-height : 100%;
+}
