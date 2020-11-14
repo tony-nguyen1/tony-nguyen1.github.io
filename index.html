@@ -28,16 +28,15 @@
 
 <body>
   <div id="imgPresentation"></div>
-
   <div id="cartesPresentationFood" class="row">
-  <div class="col m4">
-    <div class="card small">
-      <div class="card-image">
-        <img src="images/salade.jpg">
-        <span class="card-title">Salade</span>
+    <div class="col m4">
+      <div class="card small">
+        <div class="card-image">
+          <img src="images/salade.jpg">
+          <span class="card-title">Salade</span>
+        </div>
       </div>
     </div>
-  </div>
     <div class="col m4">
       <div class="card small">
         <div class="card-image">
@@ -54,8 +53,6 @@
         </div>
       </div>
     </div>
-
-
     <!--2e rangée d'image-->
     <!--comportement des row de materialize : elle se place sous la dernière-->
     <div class="col m4">
@@ -85,42 +82,74 @@
   </div>
 
   <div id ="menuCarte" class="row">
-        <div class="col s12">
-          <div class="card yellow lighten-3">
-            <div class="card-content white-text">
-              <span class="card-title black-text"><h2>La Carte</h2></span>
-
-                <div class="row">
-    <div class="col s12 m6">
-      <div class="card deep-orange darken-4">
-        <div class="card-content black-text">
-          <span class="card-title">Un plat</span>
-          <p class="truncate">This is an extremely long text that will be truncated. This is an extremely long text that will be truncated. This is an extremely long text that will be truncated. This is an extremely long text that will be truncated.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6">
-      <div class="card deep-orange darken-4">
+    <div class="col s12">
+      <div class="card yellow lighten-3">
         <div class="card-content white-text">
-          <span class="card-title">Un plat2</span>
-          <p>La description de ce plat</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6">
-      <div class="card deep-orange darken-4">
-        <div class="card-content white-text">
-          <span class="card-title">Un plat3</span>
-          <p>La description de ce plat</p>
+          <span class="card-title black-text"><h2>La Carte</h2></span>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card red darken-4">
+                <div class="card-content black-text">
+                  <span class="card-title">Un plat</span>
+                  <p class="truncate">This is an extremely long text that will be truncated. This is an extremely long text that will be truncated. This is an extremely long text that will be truncated. This is an extremely long text that will be truncated.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card red darken-4">
+                <div class="card-content white-text">
+                  <span class="card-title">Un plat2</span>
+                  <p>La description de ce plat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card red darken-4">
+                <div class="card-content white-text">
+                  <span class="card-title">Un plat3</span>
+                  <p>La description de ce plat</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div id="tarif" class="row">
+    <div class="col s6">
+      <div class="card-panel teal">
+        <table class="striped">
+          <thead>
+                  <tr>
+                      <th>Item</th>
+                      <th>Prix</th>
+                  </tr>
+          </thead>
+          <tbody>
+                  <tr>
+                    <td>A la carte</td>
+                    <td>6,50€ à 16€</td>
+                  </tr>
+                  <tr>
+                    <td>Formule</td>
+                    <td>13,90€</td>
+                  </tr>
+                  <tr>
+                    <td>Vins</td>
+                    <td>18€ - 25€</td>
+                  </tr>
+                  <tr>
+                    <td>Menu Adulte</td>
+                    <td>14€ - 19,50€</td>
+                  </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
-</div>
-</div>
-</div>
 
 
 
@@ -215,7 +244,7 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <span class="card-title"><h2>Histoire</h2></span>
+          <span class="card-title center-align"><h2>Histoire</h2></span>
           <p class="flow-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, odio vel consectetur rhoncus, purus est placerat elit, eu mattis felis turpis vel elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque interdum ultrices dui, ut molestie lectus ultrices sit amet. Quisque vehicula massa augue, eget pulvinar orci vulputate non. In viverra lectus sem, et egestas arcu consequat sed. Praesent a rutrum risus. Etiam et gravida felis. Quisque fermentum egestas vestibulum. Mauris in odio erat. Donec vitae enim sit amet erat rhoncus tincidunt et a felis. Vivamus ut pharetra libero. Vestibulum sed volutpat tellus, vitae molestie purus. Integer dictum mattis orci sit amet sodales. Nulla id elit dapibus, tincidunt justo nec, mattis turpis.
           </p>
@@ -235,6 +264,7 @@
 </body>
 </html>
 
+<!--Pour que Materialize css fonctionne-->
 <script>
   $(document).ready(function(){
     $('ul.tabs').tabs();
