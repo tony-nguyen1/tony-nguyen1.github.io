@@ -12,3 +12,6 @@ A faire :
 - Ajouter capacité
 - Ajouter Tarif
 - Ajouter rubriques histoire
+- Ajouter fonctionnalité pour copier dans presse papier
+- Ajouter marqueur sur carte du Restaurant
+- Coriger les couleurs
