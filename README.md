@@ -4,7 +4,6 @@ A faire :
 - Faire plein de petite carte avec de la nourriture en fond
 - Faire la carte
 - Ajouter moyens de paiement
-- Ajouter "on fait à emporter"
 - Ajouter rubriques Services ex : emporter parking ...
 - Ajouter information + Carte
 - Ajouter tabs in card avec tel et e-mail "Comment nous contacter ?" + boutton pour copier dans presse papier
@@ -12,4 +11,4 @@ A faire :
 - Ajouter horaires
 - Ajouter capacité
 - Ajouter Tarif
-- Ajouer rubriques histoire
+- Ajouter rubriques histoire

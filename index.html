@@ -8,10 +8,18 @@
   <meta name="description" content="Menu et photo du restaurant Printemps d'Asie">
   <meta name="author" content="Tony Nguyen">
 
+  <!--css-->
   <link rel="stylesheet" href="css/styles.css">
+  <!--Framework Materialize css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-
+  <!--Pour créer carte-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
 </head>
 
 <body>
@@ -87,8 +95,20 @@
   </div>
   </div>
 
-  <div id ="info" class="row">
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Où sommes-nous ?</span>
+          <div id="mapid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+
+
+  <div id ="info" class="row">
   <div class="col s10">
     <div class ="card">
     <div class="card-content">
@@ -110,8 +130,11 @@
 
 
   <!--JavaScript at end of body for optimized loading-->
+  <!--Pour utiliser Framework Materialize css-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <!--Pour la carte avec leaflet et OpenStreetMap-->
+  <script src="js/carte.js"></script>
 </body>
 </html>
 

@@ -1,12 +1,8 @@
+/*Pour faire la 1er image qui prend toute la hauteur*/
 body, html {
  height: 100%;
  margin: 0;
 }
-
-#test {
-  height: 100%;
-}
-
 #imgPresentation { /*https://www.w3schools.com/howto/howto_css_full_page.asp*/
  /* The image used */
  background-image: url("../images/devanture.jpg");
@@ -18,4 +14,9 @@ body, html {
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+}
+
+/*Pour la carte*/
+#mapid {
+  height : 500px;
 }
