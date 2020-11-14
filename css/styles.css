@@ -22,10 +22,14 @@ body, html {
 }
 
 /*Pour les images de nouritture*/
-#cartesPresentationFood .card.small
+#cartesPresentationFood .card.small /*les classe carte ET petite taille dans l'id cartesPresentationFood*/
 {/*TODO remplacer les images holder*/
   height: 213px; /*taille verticale hard codé de façon temporaire le temps de remplacer les images holder*/
 }
-#cartesPresentationFood .card.small .card-image {
+#cartesPresentationFood .card.small .card-image { /* les classes C enfant des classes B enfant de l'id A*/
   max-height : 100%;
+}
+
+span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class card-title*/
+  margin-top: 0px;
 }
