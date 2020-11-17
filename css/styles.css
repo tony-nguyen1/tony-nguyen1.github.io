@@ -45,3 +45,9 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   text-align: right;
   padding-right: 10px;
 }
+
+/*Pour que les cards aient la même taille*/
+/*.flex {
+  display: flex;
+  flex-wrap: wrap;
+}*/
