@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=fr.Printempsdasie -DartifactId=projectWebsite -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
