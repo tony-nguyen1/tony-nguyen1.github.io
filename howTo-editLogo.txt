@@ -1,0 +1,6 @@
+HowTo
+- change an image size
+Image at the top > Scale image >
+
+- change an object size within image
+Scale tool in tool box > Select the Object's layer > Clic on the object (a small "Scale" window should apear) > Hit Scale Button > Then to center image : Alignment Tool in Tool box > ...
