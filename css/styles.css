@@ -74,8 +74,10 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
    right: 0;
    z-index: 0;
    overflow: hidden;
+   margin-bottom: 0px;
 }
 
 #services h2 {
-  font-size: 7.52rem;
+  font-size: 16rem;
+  line-height: 4rem;
 }
