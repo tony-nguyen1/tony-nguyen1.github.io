@@ -10,4 +10,7 @@ document.body.onload = function () { //pour qu'il s'active quand la page est cha
     tileSize: 512,
     zoomOffset: -1
   }).addTo(mymap);
+
+  var marker = L.marker([43.224712, 2.334182]).addTo(mymap);
+  marker.bindPopup("<b>Printemps d'Asie!</b><br>C'est ici que nous sommes.<br>142 avenue Franklin Roosevelt 11 000 Carcassonne ").openPopup();
 };
