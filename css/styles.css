@@ -15,8 +15,9 @@ body, html {
  background-repeat: no-repeat;
  background-size: cover;
 }
+/*Pour faire la 1er image qui prend toute la hauteur*/
 
-/*Pour la carte*/
+/*Pour intégrer la carte*/
 #mapid {
   height : 500px;
 }
@@ -29,6 +30,7 @@ body, html {
 #cartesPresentationFood .card.small .card-image { /* les classes C enfant des classes B enfant de l'id A*/
   max-height : 100%;
 }
+/* Pour les images de nouritture */
 
 span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class card-title*/
   margin-top: 0px;
@@ -52,6 +54,8 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   flex-wrap: wrap;
 }*/
 
+/* Rubriques Services */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 #services img { /* item contained */
   height: 64px;
   order: 0; /* default value, flex related attribute */
@@ -64,9 +68,10 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+/* Rubriques Services */
 
 /* Pour mettre le titre en fond */
-#services span.card-title {
+#services span.card-title { /* https://stackoverflow.com/questions/1191464/is-there-a-way-to-use-use-text-as-the-background-with-css */
   position: absolute;
    top: 0;
    left: 0;
@@ -77,7 +82,13 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
    margin-bottom: 0px;
 }
 
-#services h2 {
+#services h2 { /* https://stackoverflow.com/questions/14061228/remove-white-space-above-and-below-large-text-in-an-inline-block-element */
   font-size: 16rem;
   line-height: 4rem;
+}
+/* Pour mettre le titre en fond */
+
+/*Pour que les îcones Materialize CSS soit "aligné" avec le texte*/
+i {
+  vertical-align: middle; /* https://developer.mozilla.org/fr/docs/Web/CSS/vertical-align https://stackoverflow.com/questions/18772154/white-space-at-top-of-page */
 }
