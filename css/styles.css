@@ -51,3 +51,31 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   display: flex;
   flex-wrap: wrap;
 }*/
+
+#services img { /* item contained */
+  height: 64px;
+  order: 0; /* default value, flex related attribute */
+}
+
+.container {
+  position: relative; /* Pour mettre le titre en fond */
+  display: flex;
+  flex-direction: row; /* default value, added just for sanity */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Pour mettre le titre en fond */
+#services span.card-title {
+  position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 0;
+   overflow: hidden;
+}
+
+#services h2 {
+  font-size: 7.52rem;
+}
