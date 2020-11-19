@@ -42,11 +42,21 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   text-shadow: 1px 1px #000000;
 }
 
+/*Horaires*/
 /*Pour décaler les heures d'ouvertures à droite*/
 #horaires tr td:nth-child(even){
   text-align: right;
   padding-right: 10px;
 }
+/*Pour décaler les jours de la semaine du bord*/
+#horaires tr td:nth-child(odd){
+  padding-left: 10px;
+}
+/*Les éléments en case sombres sont écrit en clair*/
+#horaires tr:nth-child(even){
+  color: #ffff;
+}
+/*Horaires*/
 
 /*Pour que les cards aient la même taille*/
 /*.flex {
@@ -92,3 +102,9 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 i {
   vertical-align: middle; /* https://developer.mozilla.org/fr/docs/Web/CSS/vertical-align https://stackoverflow.com/questions/18772154/white-space-at-top-of-page */
 }
+
+/*Contact*/
+#contact b {
+  /*margin-left: 10px;*/
+}
+/*Contact*/

@@ -24,3 +24,10 @@ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
 
 Pour cards.jpg
 https://www.behance.net/basharlouzon
+
+
+Tabs or colapsible or slider for menuCarte ? ? ?
+dans le menuCarte ajouter des Badges
+add tooltip
+add Media materialboxed class
+add slider for payement

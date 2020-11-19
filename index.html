@@ -8,9 +8,9 @@
   <meta name="description" content="Site amateur et non-officiel du restaurant Printemps d'Asie">
   <meta name="author" content="Tony Nguyen">
 
-
   <!--Framework Materialize css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!--icone de Materialize css-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--css après les stylesheet précédent pour qu'ils marchent à la fin-->
@@ -160,11 +160,11 @@
           </ul>
         </div>
         <div class="card-content grey lighten-4">
-          <div id="test4">
-            <i class="material-icons">local_phone</i>04 68 25 73 12
+          <div id="test4" class="center-align">
+            <i class="material-icons">local_phone</i><br><b>04 68 25 73 12</b>
           </div>
-          <div id="test5">
-            david.nguyen706@orange.fr
+          <div id="test5" class="center-align">
+            <i class="material-icons">email</i><br><b>david.nguyen706@orange.fr</b>
           </div>
         </div>
       </div>
@@ -257,12 +257,12 @@
           <span class="card-title"><h2>Services</h2></span>
           <!--TODO rajouter des alt pour le référencement des images-->
           <div class="container">
-            <img src="./images/chauffage.png">
-            <img src="./images/edit/parking.png">
-            <img src="./images/edit/baby-chair.png">
-            <img src="./images/edit/wc.png">
-            <img src="./images/edit/climatisation.jpg">
-            <img src="./images/edit/mangerSurPlace.jpg">
+            <img id="iconeChauffage" class="tooltipped" data-position="top" data-tooltip="Parking" src="./images/chauffage.png">
+            <img src="./images/edit/parking.png" class="tooltipped" data-position="top" data-tooltip="Parking">
+            <img src="./images/edit/baby-chair.png" class="tooltipped" data-position="top" data-tooltip="Chaise élévateur pour jeune enfant">
+            <img src="./images/edit/wc.png" class="tooltipped" data-position="top" data-tooltip="Toilettes">
+            <img src="./images/edit/climatisation.jpg" class="tooltipped" data-position="top" data-tooltip="Climatisation en été">
+            <img src="./images/edit/mangerSurPlace.jpg" class="tooltipped" data-position="top" data-tooltip="Commandes à emporter">
           </div>
         </div>
       </div>
@@ -287,22 +287,12 @@
   </div>
 </div>
 
-
   <!--JavaScript at end of body for optimized loading-->
-  <!--Pour utiliser Framework Materialize css-->
+  <!--Pour utiliser Framework Materialize css, je crois-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <!--Pour la carte avec leaflet et OpenStreetMap-->
   <script src="js/carte.js"></script>
+  <!--Pour afficher tooltips-->
+  <script src="js/tooltips.js"></script>
 </body>
 </html>
-
-<!--Pour que Materialize css fonctionne-->
-<script>
-  $(document).ready(function(){
-    $('ul.tabs').tabs();
-  });
-  $(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'tab_id');
-  });
-</script>
