@@ -238,26 +238,33 @@
 
 
 
-  <div class="row">
+  <div id="methodeDePayement"class="row">
     <div class="col s9">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
+      <div class="card yellow lighten-3">
+        <div class="card-content black-text">
           <span class="card-title"><h2>Méthode de payement</h2></span>
           <!--TODO rajouter des alt pour le référencement des images-->
-          <img src="./images/logo-ancv-cheques-vacances.png" height="80px">
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./images/edit/parking.png" height="128px"></a>
+            <a class="carousel-item" href="#two!"><img src="./images/edit/parking.png" height="128px"></a>
+            <a class="carousel-item" href="#three!"><img src="./images/edit/parking.png" height="128px"></a>
+            <a class="carousel-item" href="#four!"><img src="./images/edit/parking.png" height="128px"></a>
+            <a class="carousel-item" href="#five!"><img src="./images/edit/parking.png" height="128px"></a>
+            <a class="carousel-item" href="#six!"><img src="./images/edit/parking.png" height="128px"></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div id="services" class="row">
-  <div class="col s12">
+    <div class="col s12">
       <div class="card yellow lighten-3">
         <div class="card-content red-text darken-4">
           <span class="card-title"><h2>Services</h2></span>
           <!--TODO rajouter des alt pour le référencement des images-->
           <div class="container">
-            <img id="iconeChauffage" class="tooltipped" data-position="top" data-tooltip="Parking" src="./images/chauffage.png">
+            <img src="./images/chauffage.png" class="tooltipped" data-position="top" data-tooltip="Chauffage">
             <img src="./images/edit/parking.png" class="tooltipped" data-position="top" data-tooltip="Parking">
             <img src="./images/edit/baby-chair.png" class="tooltipped" data-position="top" data-tooltip="Chaise élévateur pour jeune enfant">
             <img src="./images/edit/wc.png" class="tooltipped" data-position="top" data-tooltip="Toilettes">
@@ -294,5 +301,7 @@
   <script src="js/carte.js"></script>
   <!--Pour afficher tooltips-->
   <script src="js/tooltips.js"></script>
+  <!--Pour créer carousel-->
+  <!--<script src="js/carousel.js"></script>-->
 </body>
 </html>
