@@ -17,6 +17,11 @@ body, html {
 }
 /*Pour faire la 1er image qui prend toute la hauteur*/
 
+body {
+  background-color: #d69696;
+}
+
+
 /*Pour intégrer la carte*/
 #mapid {
   height : 500px;
@@ -108,3 +113,8 @@ i {
   /*margin-left: 10px;*/
 }
 /*Contact*/
+
+/*Pour la taille du carousel match*/
+.carousel {
+  height: 295px; /*marche pas pour l'instant*/
+}
