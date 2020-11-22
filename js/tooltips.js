@@ -19,4 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
  };
   var elems2 = document.querySelectorAll('.carousel');
   var instances2 = M.Carousel.init(elems2, options2);
+
+
+
+  var options3;
+  var elems3 = document.querySelectorAll('.scrollspy');
+  var instances = M.ScrollSpy.init(elems3, options3);
+
 });
