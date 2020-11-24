@@ -1,0 +1,124 @@
+{
+  "name": "menu",
+  "Entrées": [{
+    "name": "Nems frits",
+    "description": "galette de riz roulée farcie au porc, vermicelle de soja, champignons noirs, légumes..",
+    "quantite": "(2grand pièces)",
+    "prix": 6.60
+  }, {
+    "name": "Samousa",
+    "description": "galette de blé garnie de boeuf, échalotte",
+    "quantite": "(3 pièces)",
+    "prix": 6.50
+  }, {
+    "name": "Salade coeur de plamier au Crabe",
+    "description": "Coeur de palmier, crabes,",
+    "prix": 7.50
+  }, {
+    "name": "Rouleaux de Printemps froids",
+    "description": "galette de riz roulée garnie de germes de soja, porc, salade, oeuf, crevettes, vermicelle",
+    "quantite": "(2 grand pièces)",
+    "prix": 6.60
+  }, {
+    "name": "Raviolis Chinois frits",
+    "description": "galette aux oeuf garnie de porc et champignons hachés, servis avec une sauce piquante galette aux oeuf garnie de porc et champignons hachés, servis avec une sauce piquante",
+    "quantite": "6p",
+    "prix": 6.50
+  }, {
+    "name": "Eventail Printemps d'Asie",
+    "quantite": "(8p)",
+    "description": "3 Nems, 1 Samousa, 2 Ravioli, 2 Beignet de Crevette",
+    "prix": 8.90
+  }, {
+    "name": "Salade Thaï aux Crevettes",
+    "description": "Légumes, soja frais et crevettes sautées",
+    "prix": 7.50
+  }, {
+    "name": "Paniers de vapeurs",
+    "quantite": "(7p)",
+    "description": "raviolis chinois cuits vapeur au porc aux crevettes, et banh Cuon",
+    "prix": 8.90
+  }, {
+    "name": "Banh Cuon",
+    "quantite": "(3p)",
+    "description": "petite crêpes vietnaùiennes farcies porc champignons à la vapeur",
+    "prix": 7.50
+  }, {
+    "name": "Bunh Nem ou Bun Bo",
+    "description": "Salade tiède de légumes et vermicelles",
+    "prix": 8.90
+  }],
+  "Plat": {
+    "Potages": [{
+      "name": "Soupe Pékinoise",
+      "description": "bouillon de poule, Bambou, Poulet, Crabe, Champignons de Chine",
+      "prix": 6.60
+    }, {
+      "name": "Vermicelle au Poulet et Crabe",
+      "description": "bouillon, vermicelle de soja, poulet, crabe, champignon chinois",
+      "prix": 6.50
+    }, {
+      "name": "Crabe et Asperges",
+      "description": "Velouté asperge crabe, poulet, champignon",
+      "prix": 7.00
+    }, {
+      "name": "velouté aux fruits de Mer",
+      "description": "Sèche, crevettes, crabe, champignons, oeuf, citron",
+      "prix": 7.50
+    }],
+    "Poissons et Crustacés": [{
+        "name": "Beignets de Crevette",
+        "quantite": "6p",
+        "prix": 8.50
+      },
+      {
+        "name": "Gambas",
+        "variation": [{
+            "name": "Au Curry",
+            "prix": 14.60
+          },
+          {
+            "name": "Au Basilic Thaillandais",
+            "prix": 14.60
+          },
+          {
+            "name": "Au Ananas Frais",
+            "prix": 14.60
+          },
+          {
+            "name": "Au Miel et vinaigre Chinois",
+            "prix": 14.90
+          },
+          {
+            "name": "Au saté (légèrement relevé)",
+            "prix": 14.90
+          }
+        ]
+      },
+      {
+        "name": "Cuisses Grenouille à l'Ail grillé",
+        "prix": 14.90
+      },
+      {
+        "name": "Crabe Farci",
+        "prix": 14.00
+      }, {
+        "name": "Coquilles St Jacques",
+        "variation": [{
+            "name": "à la sauce Saté"
+          },
+          {
+            "name": "au Basilic"
+          },
+          {
+            "name": "à la Cantonaise"
+          }
+        ]
+      }
+    ],
+    "Canard": [],
+    "Porc ou Poulet": [],
+    "Boeuf": []
+  },
+  "Dessert": {}
+}
