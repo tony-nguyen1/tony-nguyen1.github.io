@@ -30,6 +30,10 @@ span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class car
 #mapid {
   height : 500px;
 }
+.leaflet-top.leaflet-left, .leaflet-bottom.leaflet-right {
+  z-index: 996;
+}
+/*Pour la carte*/
 
 /*Pour les images de nouritture*/
 #cartesPresentationFood .card.small /*les classe carte ET petite taille dans l'id cartesPresentationFood*/
@@ -127,3 +131,9 @@ i {
   margin-top: 0px;
 }
 /*Le menu des plats*/
+
+/*Pour la nav bar*/
+#nav-mobile li a {
+  font-size: 1.9rem;
+  line-height: 1.3rem;
+}

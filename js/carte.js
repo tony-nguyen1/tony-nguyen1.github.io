@@ -24,6 +24,9 @@ document.body.onload = function() { //pour qu'il s'active quand la page est char
       //console.log(customDataSet);
       //console.log("Json parsed data is: " + JSON.stringify(customDataSet));
       addGeojson(customDataSet, mymap);
+      let layerRestoMarqueur = allMyLayers[0];
+      allMyLayers[0].openPopup();
+      //console.log(layerRestoMarqueur);
     }
   };
   xmlhttp.open("GET", "https://api.maptiler.com/data/ff436eb4-f589-433d-851a-b3816d8054f1/features.json?key=wYI2lL6OONG2s7XbPT2J", true);
@@ -43,18 +46,25 @@ document.body.onload = function() { //pour qu'il s'active quand la page est char
               color: "#0000ff"
             };
         }
-      }
-      ,onEachFeature: onEachFeature
-    })/*.bindPopup(console.log("ok"))*/.addTo(aMap);
+      },
+      onEachFeature: onEachFeature
+    }) /*.bindPopup(console.log("ok"))*/ .addTo(aMap);
   };
 
   //Je doit faire attention à bien Publier mon jeu de donnée sur maptiler.com
-  function onEachFeature(feature, layer) {
+  function onEachFeature(feature, layer) { //feature is geojson and layer is a leaflet object
     // does this feature have a property named popupContent?
-
+    let string = feature.properties.name;
     if (feature.properties && feature.properties.popupContent) {
-      console.log(feature);
-        layer.bindPopup(feature.properties.popupContent);
+      string = string.concat(feature.properties.popupContent);
     }
-}
+    if (feature.properties.name === "Printemps d'Asie") {
+      layer.bindPopup(string).openPopup();
+      //console.log("here");
+    } else {
+      layer.bindPopup(string);
+    }
+    allMyLayers.push(layer);
+  }
 };
+const allMyLayers = [];
