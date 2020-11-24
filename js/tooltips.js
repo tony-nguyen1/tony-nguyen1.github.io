@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  var options3;
+  let options3 = {
+    scrollOffset: 70
+  };
   var elems3 = document.querySelectorAll('.scrollspy');
   var instances = M.ScrollSpy.init(elems3, options3);
 

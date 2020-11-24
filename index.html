@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <!-- TODO:
   Réferrencement avec balise meta-->
@@ -17,36 +18,32 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
 
   <!--Pour créer carte-->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-  crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 </head>
 
 <body>
   <div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down table-of-contents">
-        <li><a href="#menuCarte">Menu</a></li>
-        <li><a href="#info">Info</a></li>
-        <li><a href="#lieu">Carte</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
+    <nav class="red darken-1">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down table-of-contents">
+          <li><a href="#menuCarte">Menu</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#lieu">Carte</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <div id="imgPresentation"></div>
   <div id="cartesPresentationFood" class="row">
-    <div class="col m4">
+    <div class="col s12 m4">
       <div class="card small">
         <div class="card-image">
           <img src="images/salade.jpg">
@@ -54,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="col m4">
+    <div class="col s12 m4">
       <div class="card small">
         <div class="card-image">
           <img src="images/nem.jpeg">
@@ -62,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="col m4">
+    <div class="col s12 m4">
       <div class="card small">
         <div class="card-image">
           <img src="images/port_au_caramel.jpg">
@@ -72,7 +69,7 @@
     </div>
     <!--2e rangée d'image-->
     <!--comportement des row de materialize : elle se place sous la dernière-->
-    <div class="col m4">
+    <div class="col s12 m4">
       <div class="card small">
         <div class="card-image">
           <img src="images/nem.jpeg">
@@ -80,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="col m4">
+    <div class="col s12 m4">
       <div class="card small">
         <div class="card-image">
           <img src="images/port_au_caramel.jpg">
@@ -88,7 +85,7 @@
         </div>
       </div>
     </div>
-    <div class="col m4">
+    <div class="col s12 m4">
       <div class="card small">
         <div class="card-image">
           <img src="images/salade.jpg">
@@ -139,61 +136,63 @@
 
   <div id="info" class="row section scrollspy">
     <div class="col s12 m8 row">
-      <div id="tarif" class="col s7 m6">
-      <div class="card-panel teal">
-        <table class="highlight">
-          <thead>
-                  <tr>
-                      <th>Item</th>
-                      <th>Prix</th>
-                  </tr>
-          </thead>
-          <tbody>
-                  <tr>
-                    <td>A la carte</td>
-                    <td>6,50€ à 16€</td>
-                  </tr>
-                  <tr>
-                    <td>Formule</td>
-                    <td>13,90€</td>
-                  </tr>
-                  <tr>
-                    <td>Vins</td>
-                    <td>18€ - 25€</td>
-                  </tr>
-                  <tr>
-                    <td>Menu Adulte</td>
-                    <td>14€ - 19,50€</td>
-                  </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-      <div id ="contact" class="col s5 m6">
-      <div class ="card">
-        <div class="card-content">
-          <p>Comment nous contacter ?</p>
-        </div>
-        <div class="card-tabs">
-          <ul class="tabs tabs-fixed-width">
-            <li class="tab"><a class="active" href="#test4">Téléphone</a></li>
-            <li class="tab"><a href="#test5">E-mail</a></li>
-          </ul>
-        </div>
-        <div class="card-content grey lighten-4">
-          <div id="test4" class="center-align">
-            <i class="material-icons">local_phone</i><br><b>04 68 25 73 12</b>
-          </div>
-          <div id="test5" class="center-align">
-            <i class="material-icons">email</i><br><b>david.nguyen706@orange.fr</b>
-          </div>
+      <div id="tarif" class="col s12 m6">
+        <div class="card-panel teal">
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A la carte</td>
+                <td>6,50€ à 16€</td>
+              </tr>
+              <tr>
+                <td>Formule</td>
+                <td>13,90€</td>
+              </tr>
+              <tr>
+                <td>Vins</td>
+                <td>18€ - 25€</td>
+              </tr>
+              <tr>
+                <td>Menu Adulte</td>
+                <td>14€ - 19,50€</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
+      <div id="contact" class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <p>Comment nous contacter ?</p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a class="active" href="#test4">Téléphone</a></li>
+              <li class="tab"><a href="#test5">E-mail</a></li>
+            </ul>
+          </div>
+          <div class="card-content grey lighten-4">
+            <div id="test4" class="center-align">
+              <i class="material-icons">local_phone</i><br><b>04 68 25 73 12</b>
+            </div>
+            <div id="test5" class="center-align">
+              <i class="material-icons">email</i><br><b>david.nguyen706@orange.fr</b>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="methodePayement" class="col s12">
         <div class="card red darken-4">
           <div class="card-content black-text">
-            <span class="card-title"><h2 class="center-align">Méthode de payement</h2></span>
+            <span class="card-title">
+              <h2 class="center-align">Méthode de payement</h2>
+            </span>
             <!--TODO rajouter des alt pour le référencement des images-->
             <div class="carousel">
               <a class="carousel-item" href="#one!"><img src="./images/edit/parking.png" height="200px"></a>
@@ -210,7 +209,9 @@
     <div id="horaires" class="col s12 m4">
       <div class="card red darken-4">
         <div class="card-content">
-          <span class="card-title"><h2 class="center-align">Horaires</h2></span>
+          <span class="card-title">
+            <h2 class="center-align">Horaires</h2>
+          </span>
           <table class="striped">
             <!--<thead>
                     <tr>
@@ -266,9 +267,11 @@
 
   <div id="lieu" class="row section scrollspy">
     <div class="col s12 m12">
-      <div class="card blue-grey darken-1">
+      <div class="card black">
         <div class="card-content white-text">
-          <span class="card-title">Où sommes-nous ?</span>
+          <span class="card-title center-align">
+            <h2>Localisation</h2>
+          </span>
           <div id="mapid"></div>
         </div>
       </div>
@@ -280,7 +283,9 @@
     <div class="col s12">
       <div class="card yellow lighten-3">
         <div class="card-content red-text darken-4">
-          <span class="card-title"><h2>Services</h2></span>
+          <span class="card-title">
+            <h2>Services</h2>
+          </span>
           <!--TODO rajouter des alt pour le référencement des images-->
           <div class="container">
             <img src="./images/chauffage.png" class="tooltipped" data-position="top" data-tooltip="Chauffage">
@@ -293,150 +298,188 @@
         </div>
       </div>
     </div>
-  </div
+  </div>
 
-<div id="histoire" class="row">
-  <div class="col s12">
-    <div class="card horizontal">
-      <div class="card-image">
-        <img src="./images/2personnes.jpg">
+  <div id="histoire" class="row">
+    <div class="col s12">
+      <div class="card horizontal">
+        <div class="card-image hide-on-small-only">
+          <img src="./images/2personnes.jpg">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <span class="card-title center-align">
+              <h2>Histoire</h2>
+            </span>
+            <p class="flow-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, odio vel consectetur rhoncus, purus est placerat elit, eu mattis felis turpis vel elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Quisque interdum ultrices dui, ut molestie lectus ultrices sit amet. Quisque vehicula massa augue, eget pulvinar orci vulputate non. In viverra lectus sem, et egestas arcu consequat sed. Praesent a rutrum risus.
+              Etiam et gravida felis. Quisque fermentum egestas vestibulum. Mauris in odio erat. Donec vitae enim sit amet erat rhoncus tincidunt et a felis. Vivamus ut pharetra libero. Vestibulum sed volutpat tellus, vitae molestie purus. Integer
+              dictum mattis orci sit amet sodales. Nulla id elit dapibus, tincidunt justo nec, mattis turpis.
+            </p>
+            <div class="card-image show-on-small">
+              <img src="./images/2personnes.jpg">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <span class="card-title center-align"><h2>Histoire</h2></span>
-          <p class="flow-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, odio vel consectetur rhoncus, purus est placerat elit, eu mattis felis turpis vel elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque interdum ultrices dui, ut molestie lectus ultrices sit amet. Quisque vehicula massa augue, eget pulvinar orci vulputate non. In viverra lectus sem, et egestas arcu consequat sed. Praesent a rutrum risus. Etiam et gravida felis. Quisque fermentum egestas vestibulum. Mauris in odio erat. Donec vitae enim sit amet erat rhoncus tincidunt et a felis. Vivamus ut pharetra libero. Vestibulum sed volutpat tellus, vitae molestie purus. Integer dictum mattis orci sit amet sodales. Nulla id elit dapibus, tincidunt justo nec, mattis turpis.
-          </p>
+
+    </div>
+  </div>
+
+  <div id="menuCarte" class="row scrollspy">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content yellow lighten-2">
+          <span class="card-title">
+            <h2 class="center-align">La Carte</h2>
+          </span>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width yellow lighten-3">
+            <li class="tab"><a href="#testX">
+                <h3>Entrées</h3>
+              </a></li>
+            <li class="tab"><a href="#testY" class="active">
+                <h3>Plat</h3>
+              </a></li>
+            <li class="tab"><a href="#testZ">
+                <h3>Dessert</h3>
+              </a></li>
+          </ul>
+        </div>
+        <div class="card-content yellow lighten-4">
+          <div id="testX" class="center-align">
+            <div class="section row flow-text">
+              <div class="col s12 m6">
+                <div class="card red darken-4">
+                  <div class="card-content">
+                    <span class="card-title">
+                      <h5>Nems frits (2grand pièces)</h5>
+                    </span>
+                    <p class="truncate">bouillon de poule, Bambou, Poulet, Crabe, Champignons de Chine
+                      <br>
+                      6.50
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card red darken-4">
+                  <div class="card-content">
+                    <span class="card-title">Vermicelle au Poulet et Crabe</span>
+                    <p class="truncate">bouillon, vermicelle de soja, poulet, crabe, champignon chinois
+                      <br>6.50
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card red darken-4">
+                  <div class="card-content flow-text">
+                    <span class="card-title">Crabe et Asperges</span>
+                    <p class="truncate">Velouté asperge crabe, poulet, champignon
+                      <br>7.00€
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card red darken-4">
+                  <div class="card-content">
+                    <span class="card-title">velouté aux fruits de Mer</span>
+                    <p class="truncate">Sèche, crevettes, crabe, champignons, oeuf, citron
+                      <br>7.50
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="testY" class="center-align">
+            <div class="section row flow-text">
+              <h4 class="center-align">Potages</h4>
+              <div class="col s12 l6">
+                <div class="card red darken-4">
+                  <div class="card-content flow-text">
+                    <span class="card-title">
+                      <h5>Un plat</h5>
+                    </span>
+                    <!--<span class="right-align">Prix</span>-->
+                    <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6">
+                <div class="card red darken-4">
+                  <div class="card-content flow-text">
+                    <span class="card-title">
+                      <h5>Un plat</h5>
+                    </span>
+                    <!--<span class="right-align">Prix</span>-->
+                    <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6">
+                <div class="card red darken-4">
+                  <div class="card-content flow-text">
+                    <span class="card-title">
+                      <h5>Un plat</h5>
+                    </span>
+                    <!--<span class="right-align">Prix</span>-->
+                    <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6">
+                <div class="card red darken-4">
+                  <div class="card-content flow-text">
+                    <span class="card-title">
+                      <h5>Un plat</h5>
+                    </span>
+                    <!--<span class="right-align">Prix</span>-->
+                    <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="section row">
+              <h3 class="center-align">Poissons et Crustacés</h3>
+              <div class="col s12">
+                <div class="card red darken-4">
+                  <div class="card-content flow-text">
+                    <span class="card-title">
+                      <h5>Un plat</h5>
+                    </span>
+                    <!--<span class="right-align">Prix</span>-->
+                    <ul>
+                      <li>
+                        <p>Variation 1...<span>Prix</span></p>
+                      </li>
+                      <li>
+                        <p>Variation 2...<span>Prix</span></p>
+                      </li>
+                      <li>
+                        <p>Variation 3...<span>Prix</span></p>
+                      </li>
+                      <li>
+                        <p>Variation 4...<span>Prix</span></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="testZ" class="center-align">
+            <i class="material-icons">local_phone</i><br><b>Dessert</b>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<div id ="menuCarte" class="row">
-  <div class="col s12">
-    <div class="card">
-      <div class="card-content yellow lighten-2">
-        <span class="card-title">
-          <h2 class="center-align">La Carte</h2>
-        </span>
-      </div>
-      <div class="card-tabs">
-        <ul class="tabs tabs-fixed-width yellow lighten-3">
-          <li class="tab"><a href="#testX"><h3>Entrées</h3></a></li>
-          <li class="tab"><a href="#testY" class="active"><h3>Plat</h3></a></li>
-          <li class="tab"><a href="#testZ"><h3>Dessert</h3></a></li>
-        </ul>
-      </div>
-      <div class="card-content yellow lighten-4">
-        <div id="testX" class="center-align">
-          <div class="section row flow-text">
-            <div class="col s12 m6">
-              <div class="card red darken-4">
-                <div class="card-content">
-                  <span class="card-title"><h5>Nems frits (2grand pièces)</h5></span>
-                  <p class="truncate">bouillon de poule, Bambou, Poulet, Crabe, Champignons de Chine
-  <br>
-  6.50
-</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card red darken-4">
-                <div class="card-content">
-                  <span class="card-title">Vermicelle au Poulet et Crabe</span>
-                  <p class="truncate">bouillon, vermicelle de soja, poulet, crabe, champignon chinois
-                  <br>6.50</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card red darken-4">
-                <div class="card-content flow-text">
-                  <span class="card-title">Crabe et Asperges</span>
-                  <p class="truncate">Velouté asperge crabe, poulet, champignon
-                  <br>7.00€</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card red darken-4">
-                <div class="card-content">
-                  <span class="card-title">velouté aux fruits de Mer</span>
-                  <p class="truncate">Sèche, crevettes, crabe, champignons, oeuf, citron
-                  <br>7.50</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="testY" class="center-align">
-          <div class="section row flow-text">
-            <h4 class="center-align">Potages</h4>
-            <div class="col s12 l6">
-              <div class="card red darken-4">
-                <div class="card-content flow-text">
-                  <span class="card-title"><h5>Un plat</h5></span>
-                  <!--<span class="right-align">Prix</span>-->
-                  <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card red darken-4">
-                <div class="card-content flow-text">
-                  <span class="card-title"><h5>Un plat</h5></span>
-                  <!--<span class="right-align">Prix</span>-->
-                  <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card red darken-4">
-                <div class="card-content flow-text">
-                  <span class="card-title"><h5>Un plat</h5></span>
-                  <!--<span class="right-align">Prix</span>-->
-                  <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card red darken-4">
-                <div class="card-content flow-text">
-                  <span class="card-title"><h5>Un plat</h5></span>
-                  <!--<span class="right-align">Prix</span>-->
-                  <p class="truncate">Quantité<br>Une longue description.<br>Prix€</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="section row">
-            <h3 class="center-align">Poissons et Crustacés</h3>
-            <div class="col s12">
-              <div class="card red darken-4">
-                <div class="card-content flow-text">
-                  <span class="card-title"><h5>Un plat</h5></span>
-                  <!--<span class="right-align">Prix</span>-->
-                  <ul>
-                    <li><p>Variation 1...<span>Prix</span></p></li>
-                    <li><p>Variation 2...<span>Prix</span></p></li>
-                    <li><p>Variation 3...<span>Prix</span></p></li>
-                    <li><p>Variation 4...<span>Prix</span></p></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="testZ" class="center-align">
-          <i class="material-icons">local_phone</i><br><b>Dessert</b>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
   <!--JavaScript at end of body for optimized loading-->
   <!--Pour utiliser Framework Materialize css, je crois-->
@@ -448,4 +491,5 @@
   <!--Pour créer carousel-->
   <!--<script src="js/carousel.js"></script>-->
 </body>
+
 </html>
