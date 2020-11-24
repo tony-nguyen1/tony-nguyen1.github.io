@@ -17,8 +17,12 @@ body, html {
 }
 /*Pour faire la 1er image qui prend toute la hauteur*/
 
+
 body {
   background-color: #d69696;
+}
+span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class card-title*/
+  margin-top: 0px;
 }
 
 
@@ -35,17 +39,12 @@ body {
 #cartesPresentationFood .card.small .card-image { /* les classes C enfant des classes B enfant de l'id A*/
   max-height : 100%;
 }
-/* Pour les images de nouritture */
-
-span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class card-title*/
-  margin-top: 0px;
-}
-
 /*Pour pouvoir voir les titres dans les petites images de nouritture*/
 div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
   text-shadow: 1px 1px #000000;
 }
+/* Pour les images de nouritture */
 
 /*Horaires*/
 /*Pour décaler les heures d'ouvertures à droite*/
@@ -103,23 +102,28 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 }
 /* Pour mettre le titre en fond */
 
-/*Pour que les îcones Materialize CSS soit "aligné" avec le texte*/
-i {
-  vertical-align: middle; /* https://developer.mozilla.org/fr/docs/Web/CSS/vertical-align https://stackoverflow.com/questions/18772154/white-space-at-top-of-page */
-}
-
 /*Contact*/
 #contact b {
   /*margin-left: 10px;*/
 }
+/*Pour que les îcones Materialize CSS soit "aligné" avec le texte*/
+i {
+  vertical-align: middle; /* https://developer.mozilla.org/fr/docs/Web/CSS/vertical-align https://stackoverflow.com/questions/18772154/white-space-at-top-of-page */
+}
 /*Contact*/
 
+/*Méthodes de Paiements*/
 /*Pour la taille du carousel match*/
 .carousel {
   height: 295px; /*marche pas pour l'instant*/
 }
 
-/*TODO ajouter bordure haut dans la carte au-dessus des tabs*/
-/*border-top-style: solid;
-
-border-width: 1px;*/
+/*Le menu des plats*/
+#menuCarte ul.tabs {
+  border-top-style: solid;
+  border-width: 1px;
+}
+#menuCarte h3 {
+  margin-top: 0px;
+}
+/*Le menu des plats*/
