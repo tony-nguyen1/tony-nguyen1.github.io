@@ -137,3 +137,9 @@ i {
   font-size: 1.9rem;
   line-height: 1.3rem;
 }
+
+/*Pour la rubrique Histoire*/
+#histoire .card-image.show-on-small {
+  margin-left: auto;
+  margin-right: auto;
+}
