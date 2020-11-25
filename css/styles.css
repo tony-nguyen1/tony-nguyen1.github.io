@@ -82,12 +82,13 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   order: 0; /* default value, flex related attribute */
 }
 
-.container {
+#services .container {
   position: relative; /* Pour mettre le titre en fond */
   display: flex;
   flex-direction: row; /* default value, added just for sanity */
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: auto;
 }
 /* Rubriques Services */
 
@@ -145,4 +146,9 @@ i {
 #histoire .card-image.show-on-small {
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Pour la rubrique Information*/
+#info .containerGrid {
+  
 }
