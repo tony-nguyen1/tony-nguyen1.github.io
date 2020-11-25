@@ -64,6 +64,9 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 #horaires tr:nth-child(even){
   color: #ffff;
 }
+#horaires blockquote {
+  color: #ffff;
+}
 /*Horaires*/
 
 /*Pour que les cards aient la même taille*/
