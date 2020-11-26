@@ -140,15 +140,11 @@ i {
 #nav-mobile li a {
   font-size: 1.9rem;
   line-height: 1.3rem;
+  color: white;
 }
 
 /*Pour la rubrique Histoire*/
 #histoire .card-image.show-on-small {
   margin-left: auto;
   margin-right: auto;
-}
-
-/*Pour la rubrique Information*/
-#info .containerGrid {
-  
 }
