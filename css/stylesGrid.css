@@ -1,0 +1,46 @@
+body {
+  margin: 0px 0px 0px 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.75rem [col1-start] 1fr [col1-end] 1.5rem [col2-start] 1fr [col2-end] 1.5rem [col3-start] 1fr [col3-end] 0.75rem;
+  grid-template-rows: [row1-start] auto [row1-end] 1rem [row2-start] auto [row2-end];
+  grid-template-areas:
+      "section1 . section2 . horaires"
+      "section3 section3 section3 . horaires";
+       /*impossible de nomer 2 zones séparés par un point le même nom*/
+
+  background-color: black;
+}
+.item {
+  grid-column: col2-start / col2-end;
+  grid-row: row1-start / row1-end;
+
+  background-color: red;
+  height: 160px;
+  width: auto;
+}
+.itemBis {
+  grid-column: col1-start / col1-end;
+  grid-row: row1-start / row1-end;
+
+  background-color: red;
+  height: 160px;
+  width: auto;
+}
+.item2 {
+  grid-column: col1-start / col2-end;
+  grid-row: row2-start / row2-end;
+
+  background-color: blue;
+  height: 160px;
+  width: auto;
+}
+.item3 {
+  grid-column: col3-start/col3-end;
+  grid-row: row1-start / row2-end;
+
+  background-color: green;
+  /*height: 160px;*/
+  width: auto;
+}

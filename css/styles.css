@@ -64,7 +64,29 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 #horaires tr:nth-child(even){
   color: #ffff;
 }
+#horaires blockquote {
+  color: #ffff;
+}
 /*Horaires*/
+
+/*Tarif*/
+/*Pour décaler les heures d'ouvertures à droite*/
+#tarif tr td:nth-child(even){
+  text-align: right;
+  padding-right: 10px;
+}
+/*Pour décaler les jours de la semaine du bord*/
+#tarif tr td:nth-child(odd){
+  padding-left: 10px;
+}
+#tarif tr th:nth-child(even){
+  text-align: right;
+  padding-right: 30px;
+}
+#tarif tr th:nth-child(odd){
+  padding-left: 30px;
+}
+/*Tarif*/
 
 /*Pour que les cards aient la même taille*/
 /*.flex {
@@ -79,12 +101,13 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   order: 0; /* default value, flex related attribute */
 }
 
-.container {
+#services .container {
   position: relative; /* Pour mettre le titre en fond */
   display: flex;
   flex-direction: row; /* default value, added just for sanity */
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: auto;
 }
 /* Rubriques Services */
 
@@ -136,6 +159,7 @@ i {
 #nav-mobile li a {
   font-size: 1.9rem;
   line-height: 1.3rem;
+  color: white;
 }
 
 /*Pour la rubrique Histoire*/
