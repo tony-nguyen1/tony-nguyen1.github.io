@@ -50,6 +50,12 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 }
 /* Pour les images de nouritture */
 
+/*Info*/
+#info>div.col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/*Info*/
 /*Horaires*/
 /*Pour décaler les heures d'ouvertures à droite*/
 #horaires tr td:nth-child(even){

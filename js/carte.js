@@ -56,7 +56,7 @@ document.body.onload = function() { //pour qu'il s'active quand la page est char
     // does this feature have a property named popupContent?
     let string = feature.properties.name;
     if (feature.properties && feature.properties.popupContent) {
-      string = string.concat(feature.properties.popupContent);
+      string = feature.properties.popupContent;
     }
     if (feature.properties.name === "Printemps d'Asie") {
       layer.bindPopup(string).openPopup();
