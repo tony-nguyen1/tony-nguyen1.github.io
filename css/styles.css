@@ -161,6 +161,32 @@ i {
   line-height: 1.3rem;
   color: white;
 }
+.nav-wrapper h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.9rem;
+  line-height: 100%;
+  text-align: center;
+}
+.nav-wrapper .brand-logo {
+  height: 100%;
+}
+@media screen and (min-width: 404px) {
+  .nav-wrapper h1  {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  .nav-wrapper h1  {
+    margin-top: 1.3rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  .nav-wrapper h1  {
+    margin-left: 30px;
+  }
+}
+/*Pour la nav bar*/
 
 /*Pour la rubrique Histoire*/
 #histoire .card-image.show-on-small {
