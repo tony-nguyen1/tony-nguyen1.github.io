@@ -12,5 +12,5 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Build with Maven
-        run: mvn -B test --file ./websiteVerificationProject/pom.xml
+      - name: Build and test with Maven
+        run: mvn test --file ./websiteVerificationProject/pom.xml
