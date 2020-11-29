@@ -56,6 +56,9 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   padding-right: 0px;
 }
 /*Info*/
+#info div:first-child>div.col {
+  padding-left: 0px;
+}
 /*Horaires*/
 /*Pour décaler les heures d'ouvertures à droite*/
 #horaires tr td:nth-child(even){
@@ -158,6 +161,10 @@ i {
 }
 #menuCarte h3 {
   margin-top: 0px;
+}
+#menuCarte>div {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /*Le menu des plats*/
 
