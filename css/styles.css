@@ -151,7 +151,7 @@ i {
 /*Méthodes de Paiements*/
 /*Pour la taille du carousel match*/
 .carousel {
-  height: 295px; /*marche pas pour l'instant*/
+  height: 295px; /*TODO; marche pas pour l'instant*/
 }
 
 /*Le menu des plats*/
@@ -165,6 +165,19 @@ i {
 #menuCarte>div {
   padding-left: 0px;
   padding-right: 0px;
+}
+#menuBuger {
+  position: fixed;
+  color: White;
+  right: 7vw;
+}
+#menuBurgerImg {
+  font-size: 56px;
+}
+@media screen and (min-width: 601px) {
+  #menuBurgerImg {
+    font-size: 64px;
+  }
 }
 /*Le menu des plats*/
 
