@@ -46,7 +46,7 @@ span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class car
 /*Pour pouvoir voir les titres dans les petites images de nouritture*/
 div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-  text-shadow: 1px 1px #000000;
+  text-shadow: 2px 2px #000000;
 }
 /* Pour les images de nouritture */
 
@@ -139,9 +139,16 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 /* Pour mettre le titre en fond */
 
 /*Contact*/
-#contact b {
-  /*margin-left: 10px;*/
+#contact h3 {
+  height: 2.92rem;
 }
+#contact ul, #contact li:nth-child(-n+2) {/*Les 2 premiers*/
+  height: 55px;
+}
+#contact h3 {
+  margin-top: 5px;
+}
+
 /*Pour que les îcones Materialize CSS soit "aligné" avec le texte*/
 i {
   vertical-align: middle; /* https://developer.mozilla.org/fr/docs/Web/CSS/vertical-align https://stackoverflow.com/questions/18772154/white-space-at-top-of-page */
@@ -165,19 +172,6 @@ i {
 #menuCarte>div {
   padding-left: 0px;
   padding-right: 0px;
-}
-#menuBuger {
-  position: fixed;
-  color: White;
-  right: 7vw;
-}
-#menuBurgerImg {
-  font-size: 56px;
-}
-@media screen and (min-width: 601px) {
-  #menuBurgerImg {
-    font-size: 64px;
-  }
 }
 /*Le menu des plats*/
 
@@ -213,6 +207,21 @@ i {
   }
 }
 /*Pour la nav bar*/
+/*Menu Burger*/
+#menuBuger {
+  position: fixed;
+  color: White;
+  right: 7vw;
+}
+#menuBurgerImg {
+  font-size: 56px;
+}
+@media screen and (min-width: 601px) {
+  #menuBurgerImg {
+    font-size: 64px;
+  }
+}
+/*Menu Burger*/
 
 /*Pour la rubrique Histoire*/
 #histoire .card-image.show-on-small {
