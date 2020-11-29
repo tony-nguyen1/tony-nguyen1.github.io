@@ -56,6 +56,9 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   padding-right: 0px;
 }
 /*Info*/
+#info div:first-child>div.col {
+  padding-left: 0px;
+}
 /*Horaires*/
 /*Pour décaler les heures d'ouvertures à droite*/
 #horaires tr td:nth-child(even){
@@ -148,7 +151,7 @@ i {
 /*Méthodes de Paiements*/
 /*Pour la taille du carousel match*/
 .carousel {
-  height: 295px; /*marche pas pour l'instant*/
+  height: 295px; /*TODO; marche pas pour l'instant*/
 }
 
 /*Le menu des plats*/
@@ -158,6 +161,23 @@ i {
 }
 #menuCarte h3 {
   margin-top: 0px;
+}
+#menuCarte>div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#menuBuger {
+  position: fixed;
+  color: White;
+  right: 7vw;
+}
+#menuBurgerImg {
+  font-size: 56px;
+}
+@media screen and (min-width: 601px) {
+  #menuBurgerImg {
+    font-size: 64px;
+  }
 }
 /*Le menu des plats*/
 
