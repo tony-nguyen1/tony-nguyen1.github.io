@@ -33,6 +33,11 @@ span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class car
 .leaflet-top.leaflet-left, .leaflet-bottom.leaflet-right {
   z-index: 996;
 }
+#lieu .card-content {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
 /*Pour la carte*/
 
 /*Pour les images de nouritture*/
@@ -140,10 +145,12 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 
 /*Contact*/
 #contact h3 {
-  height: 2.92rem;
+  height: 1rem;
 }
 #contact ul, #contact li:nth-child(-n+2) {/*Les 2 premiers*/
-  height: 55px;
+  height: 4rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 #contact h3 {
   margin-top: 5px;
@@ -227,4 +234,12 @@ i {
 #histoire .card-image.show-on-small {
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Footer*/
+footer.page-footer h2 {
+  margin-top: 1.373rem;
+}
+footer i.material-icons {
+  margin-right: 5px;
 }
