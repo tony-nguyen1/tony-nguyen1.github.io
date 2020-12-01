@@ -33,6 +33,11 @@ span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class car
 .leaflet-top.leaflet-left, .leaflet-bottom.leaflet-right {
   z-index: 996;
 }
+#lieu .card-content {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
 /*Pour la carte*/
 
 /*Pour les images de nouritture*/
@@ -46,7 +51,7 @@ span.card-title h2 { /*les balises h2 enfant de balise span ayant pour class car
 /*Pour pouvoir voir les titres dans les petites images de nouritture*/
 div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-  text-shadow: 1px 1px #000000;
+  text-shadow: 2px 2px #000000;
 }
 /* Pour les images de nouritture */
 
@@ -95,6 +100,14 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 #tarif tr th:nth-child(odd){
   padding-left: 30px;
 }
+#tarif, #capacite {
+  padding-right: 0px;
+}
+@media screen and (min-width: 601px) {
+  #tarif, #capacite {
+    padding-right: 0.75rem;
+  }
+}
 /*Tarif*/
 
 /*Pour que les cards aient la même taille*/
@@ -139,9 +152,18 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 /* Pour mettre le titre en fond */
 
 /*Contact*/
-#contact b {
-  /*margin-left: 10px;*/
+#contact h3 {
+  height: 1rem;
 }
+#contact ul, #contact li:nth-child(-n+2) {/*Les 2 premiers*/
+  height: 4rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#contact h3 {
+  margin-top: 5px;
+}
+
 /*Pour que les îcones Materialize CSS soit "aligné" avec le texte*/
 i {
   vertical-align: middle; /* https://developer.mozilla.org/fr/docs/Web/CSS/vertical-align https://stackoverflow.com/questions/18772154/white-space-at-top-of-page */
@@ -150,8 +172,19 @@ i {
 
 /*Méthodes de Paiements*/
 /*Pour la taille du carousel match*/
-.carousel {
-  height: 295px; /*TODO; marche pas pour l'instant*/
+#methodePayement .flexContainer {
+  position: relative; /* Pour mettre le titre en fond */
+  display: flex;
+  flex-direction: row; /* default value, added just for sanity */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: auto;
+}
+#methodePayement .ticketResto {
+  max-width: 100%;
+}
+#methodePayement img {
+  height: 77px;
 }
 
 /*Le menu des plats*/
@@ -166,18 +199,8 @@ i {
   padding-left: 0px;
   padding-right: 0px;
 }
-#menuBuger {
-  position: fixed;
-  color: White;
-  right: 7vw;
-}
-#menuBurgerImg {
-  font-size: 56px;
-}
-@media screen and (min-width: 601px) {
-  #menuBurgerImg {
-    font-size: 64px;
-  }
+#menuCarte .card-content .card {
+  color: white;
 }
 /*Le menu des plats*/
 
@@ -213,9 +236,53 @@ i {
   }
 }
 /*Pour la nav bar*/
+/*Menu Burger*/
+#menuBuger {
+  position: fixed;
+  color: White;
+  right: 7vw;
+}
+#menuBurgerImg {
+  font-size: 56px;
+}
+@media screen and (min-width: 601px) {
+  #menuBurgerImg {
+    font-size: 64px;
+  }
+}
+/*Menu Burger*/
 
 /*Pour la rubrique Histoire*/
 #histoire .card-image.show-on-small {
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Footer*/
+footer.page-footer h2 {
+  margin-top: 1.373rem;
+}
+footer i.material-icons {
+  margin-right: 5px;
+}
+
+/*Capacité*/
+#capacite img {
+  height: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#capacite p {
+  text-align: center;
+}
+#capacite .card-content {
+  padding-bottom: 21px;
+  margin-bottom: 0px;
+}
+#capacite h3 {
+  margin-top: 0px;
+}
+#capacite .activator {
+  cursor: pointer;
 }

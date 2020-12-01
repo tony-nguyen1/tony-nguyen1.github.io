@@ -31,7 +31,9 @@
   <div class="navbar-fixed">
     <nav class="red darken-1">
       <div class="nav-wrapper">
-        <a href="" class="brand-logo"><h1>Printemps d'Asie</h1></a>
+        <a href="" class="brand-logo">
+          <h1>Printemps d'Asie</h1>
+        </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down table-of-contents">
           <li><a href="#menuCarte">Menu</a></li>
           <li><a href="#info">Info</a></li>
@@ -44,17 +46,21 @@
   </div>
 
   <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="images/office.jpg">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
       </div>
-      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
+    </li>
     <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
     <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
+    <li>
+      <div class="divider"></div>
+    </li>
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
   </ul>
@@ -155,36 +161,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m6">
-                  <div class="card red darken-4">
-                    <div class="card-content">
-                      <span class="card-title">Vermicelle au Poulet et Crabe</span>
-                      <p class="truncate">bouillon, vermicelle de soja, poulet, crabe, champignon chinois
-                        <br>6.50
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <div class="card red darken-4">
-                    <div class="card-content flow-text">
-                      <span class="card-title">Crabe et Asperges</span>
-                      <p class="truncate">Velouté asperge crabe, poulet, champignon
-                        <br>7.00€
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <div class="card red darken-4">
-                    <div class="card-content">
-                      <span class="card-title">velouté aux fruits de Mer</span>
-                      <p class="truncate">Sèche, crevettes, crabe, champignons, oeuf, citron
-                        <br>7.50
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div id="testY" class="center-align">
@@ -271,6 +247,23 @@
         </div>
       </div>
     </div>
+    <div id="methodePayement" class="col s12 section">
+      <div class="card yellow lighten-3">
+        <div class="card-content red-text darken-4">
+          <span class="card-title center-align">
+            <h2>Méthodes de payement</h2>
+          </span>
+          <!--TODO rajouter des alt pour le référencement des images-->
+          <div class="flexContainer">
+            <img src="./images/payement/euro.svg" alt="Logo d'une pièce de 1 euro" class="tooltipped" data-position="top" data-tooltip="Euro €">
+            <img src="./images/payement/ticketRestaurantLogo.png" alt="Logo de ticket restaurant" class="tooltipped ticketResto" data-position="top" data-tooltip="Ticket restaurant">
+            <img src="./images/payement/chequeVacance.svg" alt="Loge de ANCV chèques vacances" class="tooltipped" data-position="top" data-tooltip="Chèques vacances">
+            <img src="./images/payement/creditCard.svg" alt="Logo d'une carte de crédit" class="tooltipped" data-position="top" data-tooltip="Carte de crédit">
+            <img src="./images/payement/visaNewLogo.svg" alt="Logo de Visa" class="tooltipped" data-position="top" data-tooltip="Visa">
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="info" class="col s12 scrollspy ">
       <div class="col s12 m6">
         <div id="tarif" class="col s12">
@@ -306,7 +299,7 @@
             </table>
           </div>
         </div>
-        <!--TODO Remettre son id à Contact-->
+        <!--
         <div class="col s12">
           <div class="card">
             <div class="card-content">
@@ -330,37 +323,75 @@
             </div>
           </div>
         </div>
-        <div class="col s12">
+        <div id="contact" class="col s12">
           <div class="card">
             <div class="card-content">
-              <p>Comment nous contacter ?</p>
+              <span class="card-title">
+                <h2 class="center-align">Contact</h2>
+              </span>
             </div>
             <div class="card-tabs">
               <ul class="tabs tabs-fixed-width">
-                <li class="tab"><a class="active" href="#test4"><h3>
-                  Téléphone
-                </h3></a></li>
-                <li class="tab"><a href="#test5"><h3>E-mail</h3></a></li>
+                <li class="tab"><a class="active" href="#test4">
+                    <h3>
+                      Téléphone
+                    </h3>
+                  </a></li>
+                <li class="tab"><a href="#test5">
+                    <h3>E-mail</h3>
+                  </a></li>
               </ul>
             </div>
             <div class="card-content grey lighten-4">
               <div id="test4" class="center-align">
-                <i class="material-icons">local_phone</i><br><b>04 68 25 73 12</b>
+                <i class="material-icons">local_phone</i>
+                <br>
+                <b>04 68 25 73 12</b>
+                <br><br>
+                <p>Appelez nous pour commander à emporter ou réserver une table</p>
               </div>
               <div id="test5" class="center-align">
                 <i class="material-icons">email</i><br><b>david.nguyen706@orange.fr</b>
               </div>
             </div>
           </div>
+        </div>-->
+        <div id="capacite" class="col s12">
+          <div class="card red darken-4">
+            <div class="card-content white-text row">
+              <span class="card-title white-text center-align">
+                <h3>Capacite</h3>
+              </span>
+              <div class="col l6 s12">
+                <img src="./images/capacite/plans.svg" alt="Image de plan avec des flèches" class="activator">
+                <p>2 salles</p>
+              </div>
+              <div class="col s12 l6">
+                <img src="./images/capacite/cutlery.svg" alt="Image de couverts" class="tooltipped" data-position="top" data-tooltip="Couverts">
+                <p>50 couverts</p>
+              </div>
+              <div class="col s12 l6">
+                <img src="./images/capacite/table.svg" alt="Image de table" class="tooltipped" data-position="top" data-tooltip="Table">
+                <p>11 tables</p>
+              </div>
+              <div class="col s12 l6">
+                <img src="./images/capacite/folding-chair.svg" alt="Image de chaise" class="tooltipped" data-position="top" data-tooltip="Chaise">
+                <p>38 chaises</p>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Images des Salles<i class="material-icons right">close</i></span>
+              <p>TODO<!--TODO : Rajouter un carrousel fesant toute la hauteur -le titre et toute la largeur avec 2 img : Salle A et Salle B--></p>
+            </div>
+          </div>
         </div>
-        <!--TODO Remettre son id à Contact-->
       </div>
 
       <div id="horaires" class="col s12 m6">
         <div class="card red darken-4">
           <div class="card-content">
             <span class="card-title">
-              <h2 class="center-align">Horaires</h2>
+              <h2 class="center-align white-text">Horaires</h2>
             </span>
             <table class="striped flow-text">
               <tbody>
@@ -394,15 +425,6 @@
                 </tr>
               </tbody>
             </table>
-
-            <blockquote>
-              <p>
-                2 salles<br>
-                50 couverts<br>
-                11 tables<br>
-                38 chaises
-              </p>
-            </blockquote>
           </div>
         </div>
       </div>
@@ -417,7 +439,7 @@
         </div>
       </div>
     </div>
-    <div id="services"  class="col s12 section">
+    <div id="services" class="col s12 section">
       <div class="card yellow lighten-3">
         <div class="card-content red-text darken-4">
           <span class="card-title">
@@ -435,7 +457,7 @@
         </div>
       </div>
     </div>
-    <div id="histoire"  class="col s12">
+    <div id="histoire" class="col s12">
       <div class="card horizontal">
         <div class="card-image hide-on-small-only">
           <img src="./images/2personnes.jpg">
@@ -461,9 +483,56 @@
     </div>
   </div>
 
-  <div class="row">
-
+  <!--<div class="row">
+    <div class="col s12">
+      <div class="card red darken-4">
+        <div class="card-content black-text">
+          <span class="card-title">
+            <h2 class="center-align">Méthode de payement</h2>
+          </span>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./images/edit/chequeVacance.png" height="200px"></a>
+            <a class="carousel-item" href="#two!"><img src="./images/edit/parking.png" height="200px"></a>
+            <a class="carousel-item" href="#three!"><img src="./images/edit/parking.png" height="200px"></a>
+            <a class="carousel-item" href="#four!"><img src="./images/edit/parking.png" height="200px"></a>
+            <a class="carousel-item" href="#five!"><img src="./images/edit/parking.png" height="200px"></a>
+            <a class="carousel-item" href="#six!"><img src="./images/edit/parking.png" height="200px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>-->
+
+
+  <footer class="page-footer red darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h2 class="white-text">Contact</h2>
+          <i class="material-icons test">local_phone</i><b>04 68 25 73 12</b><br>
+          <i class="material-icons test">email</i><b>david.nguyen706@orange.fr</b>
+          <p>Appelez nous pour commander à emporter ou réserver une table sur place</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Sources des Images</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.flaticon.com/authors/freepik">Freepik</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://commons.wikimedia.org/wiki/File:Visa_Inc._logo.svg">Wikipedia</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://worldvectorlogo.com/fr/logo/ancv-cheque-vacances">worldvectorlogo.com</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.freelogovectors.net/ticket-restaurant-logo/">freelogovectors.net</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Créateur : Tony Nguyen 2020
+        <a class="grey-text text-lighten-4 right" href="https://github.com/tony-nguyen1/tony-nguyen1.github.io">Code Source</a>
+      </div>
+    </div>
+  </footer>
+
 
 
   <!--JavaScript at end of body for optimized loading-->

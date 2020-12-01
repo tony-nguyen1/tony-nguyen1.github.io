@@ -116,7 +116,22 @@
         ]
       }
     ],
-    "Canard": [],
+    "Canard": [{
+      "name": "Canard",
+      "variation": [{
+        "name": "Aux Ananas"
+      }, {
+        "name": "Aux Lychée"
+      }, {
+        "name": "Aux 2 Champignos de Chine"
+      }, {
+        "name": "À la sauce Cantonaise"
+      }, {
+        "name": "À l'Orange et au Gingembre"
+      }, {
+        "name": "Canard Laqué"
+      }]
+    }, {}],
     "Porc ou Poulet": [],
     "Boeuf": []
   },
