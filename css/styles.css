@@ -100,6 +100,14 @@ div#cartesPresentationFood /*div.col div.card div.card-image span.card-title*/ {
 #tarif tr th:nth-child(odd){
   padding-left: 30px;
 }
+#tarif, #capacite {
+  padding-right: 0px;
+}
+@media screen and (min-width: 601px) {
+  #tarif, #capacite {
+    padding-right: 0.75rem;
+  }
+}
 /*Tarif*/
 
 /*Pour que les cards aient la même taille*/
@@ -164,8 +172,19 @@ i {
 
 /*Méthodes de Paiements*/
 /*Pour la taille du carousel match*/
-.carousel {
-  height: 295px; /*TODO; marche pas pour l'instant*/
+#methodePayement .flexContainer {
+  position: relative; /* Pour mettre le titre en fond */
+  display: flex;
+  flex-direction: row; /* default value, added just for sanity */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: auto;
+}
+#methodePayement .ticketResto {
+  max-width: 100%;
+}
+#methodePayement img {
+  height: 77px;
 }
 
 /*Le menu des plats*/
@@ -179,6 +198,9 @@ i {
 #menuCarte>div {
   padding-left: 0px;
   padding-right: 0px;
+}
+#menuCarte .card-content .card {
+  color: white;
 }
 /*Le menu des plats*/
 
@@ -242,4 +264,25 @@ footer.page-footer h2 {
 }
 footer i.material-icons {
   margin-right: 5px;
+}
+
+/*Capacité*/
+#capacite img {
+  height: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#capacite p {
+  text-align: center;
+}
+#capacite .card-content {
+  padding-bottom: 21px;
+  margin-bottom: 0px;
+}
+#capacite h3 {
+  margin-top: 0px;
+}
+#capacite .activator {
+  cursor: pointer;
 }
